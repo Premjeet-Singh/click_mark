@@ -1,0 +1,52 @@
+body{
+	background: url(4.jpg); 
+}
+#wrap{
+	padding: 30px;
+	margin: 63px auto;
+	width: 650px;
+	height: auto;
+	background: mediumseagreen;
+	border: #928 3px solid;
+}
+h1{
+	width: 550px;
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px auto;
+	background: steelblue;
+	border: #234 2px solid;
+}
+div#mycontent{ 
+	font-size:18px; 
+	border:#000 2px solid; 
+	width:450px; 
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	height:250px; 
+	padding:20px; 
+	margin: 10px auto;
+	background: teal; 
+}
+div#mymenu > button{ 
+	padding: 10px 31px;
+	margin-top: 26px;
+	margin-bottom: 0px;
+	background: powderblue; 
+}
+#btn1{
+	margin-left: 79px;
+}
+div#btn_marker{
+	position: fixed;
+	border:#000 2px solid; 
+	border-bottom:none;
+	width:0px;
+	height:10px;
+	top:194px;
+	display:none;
+	-webkit-transition: left .5s ease 0s, width .5s linear 0s;
+	transition:left .5s ease 0s, width .5s linear 0s;
+}

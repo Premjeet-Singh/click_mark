@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>click mark example</title>
+<link rel="stylesheet" href="css/style.css">
+<script>
+function _(x){
+    return document.getElementById(x);
+}
+function initMenu(){
+	_("btn_marker").style.left = _("btn1").offsetLeft+"px";
+	_("btn_marker").style.width = _("btn1").offsetWidth-2+"px";
+	_("btn_marker").style.display = "block";
+}
+function loadContent(btn){
+	_("btn_marker").style.left = btn.offsetLeft+"px";
+	_("btn_marker").style.width = btn.offsetWidth-2+"px";
+	_("mycontent").innerHTML = "Content for "+btn.innerHTML+" loaded";
+}
+window.addEventListener('load', function(event) { initMenu(); });
+</script>
+</head>
+<body>
+<div id="wrap">
+	<h1>Animation by Button Event</h1>
+	<div id="mymenu">
+	  <div id="btn_marker"></div>
+	  <button id="btn1" onclick="loadContent(this)">HTML5</button>
+	  <button id="btn2" onclick="loadContent(this)">CSS</button>
+	  <button id="btn3" onclick="loadContent(this)">JavaScript Program</button>
+	  <button id="btn4" onclick="loadContent(this)">PHP</button>
+	</div>
+	<div id="mycontent">Content for HTML5</div>
+</div>
+</body>
+</html>
